@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://dusty:test@dustybk-shard-00-00-sdi8f.mongodb.net:27017,dustybk-shard-00-01-sdi8f.mongodb.net:27017,dustybk-shard-00-02-sdi8f.mongodb.net:27017/test?ssl=true&replicaSet=DustyBK-shard-0&authSource=admin&retryWrites=true",
+    "database": "DustyBK",
+    "password": "test",
+    "name": "mongo",
+    "user": "dusty",
+    "connector": "mongodb"
+  }
+}
