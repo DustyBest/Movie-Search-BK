@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "userName": {
+    "username": {
       "type": "string",
       "required": true
     },
@@ -21,7 +21,23 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "favFilms": {
+      "type": "hasMany",
+      "model": "movie",
+      "foreignKey": "userId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

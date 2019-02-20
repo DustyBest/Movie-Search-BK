@@ -38,5 +38,9 @@
   "appUser": {
     "dataSource": "mongo",
     "public": true
+  },
+  "movie": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

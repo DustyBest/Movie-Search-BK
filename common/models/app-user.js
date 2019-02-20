@@ -1,6 +1,12 @@
 "use strict";
 
 module.exports = function(Appuser) {
+  Appuser.afterRemote("register", async (ctx, user, next) => {
+    if (user) {
+      user.token = user.id;
+    }
+  });
+
   Appuser.afterRemote("login", async (ctx, user, next) => {
     if (user) {
       user.token = user.id;
