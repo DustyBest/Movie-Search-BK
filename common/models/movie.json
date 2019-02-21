@@ -9,6 +9,18 @@
     "filmid": {
       "type": "number",
       "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "poster_path": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
